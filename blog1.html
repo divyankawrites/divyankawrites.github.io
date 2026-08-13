@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog 1 | Divyanka Dubey</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg: #f7f2ea;
+			--paper: #fffaf3;
+			--ink: #1d2a38;
+			--muted: #4f5e6d;
+			--accent: #ce5d2a;
+			--accent-soft: #f5d8c8;
+			--line: #e4d8ca;
+			--card: #fffefa;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "DM Sans", sans-serif;
+			color: var(--ink);
+			background:
+				radial-gradient(circle at 12% 10%, #ffe6d5 0%, transparent 34%),
+				radial-gradient(circle at 82% 0%, #f8efe3 0%, transparent 28%),
+				linear-gradient(180deg, #fbf7f0 0%, #f6efe6 100%);
+			line-height: 1.6;
+			min-height: 100vh;
+		}
+
+		.wrap {
+			width: min(1050px, 92vw);
+			margin: 0 auto;
+			padding: 2rem 0 3rem;
+		}
+
+		header {
+			background: color-mix(in srgb, var(--paper) 92%, white 8%);
+			border: 1px solid var(--line);
+			border-radius: 24px;
+			padding: 2.2rem;
+			box-shadow: 0 20px 40px rgba(83, 57, 39, 0.08);
+			animation: rise 700ms ease-out;
+		}
+
+		.kicker {
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			color: var(--accent);
+			font-weight: 700;
+			margin-bottom: 0.6rem;
+		}
+
+		h1, h2 {
+			font-family: "Fraunces", serif;
+			line-height: 1.12;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 5vw, 3.2rem);
+			margin-bottom: 0.7rem;
+		}
+
+		.subtitle {
+			font-size: 1.05rem;
+			color: var(--muted);
+			max-width: 65ch;
+		}
+
+		.meta {
+			margin-top: 1.2rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.6rem;
+		}
+
+		.chip {
+			border: 1px solid var(--line);
+			background: var(--card);
+			border-radius: 999px;
+			padding: 0.45rem 0.9rem;
+			font-size: 0.9rem;
+			color: var(--ink);
+			text-decoration: none;
+		}
+
+		main {
+			margin-top: 1.4rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		section {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: 20px;
+			padding: 1.4rem;
+			box-shadow: 0 10px 30px rgba(44, 41, 37, 0.05);
+			animation: rise 700ms ease-out;
+		}
+
+		section h2 {
+			font-size: 1.4rem;
+			margin-bottom: 0.8rem;
+		}
+
+		p + p {
+			margin-top: 0.7rem;
+		}
+
+		.article-content h3 {
+			font-family: "Fraunces", serif;
+			font-size: 1.2rem;
+			margin-top: 1.1rem;
+			margin-bottom: 0.5rem;
+		}
+
+		ul {
+			padding-left: 1.1rem;
+		}
+
+		li + li {
+			margin-top: 0.5rem;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 1rem;
+			text-decoration: none;
+			font-weight: 700;
+			color: #7a371a;
+			border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent 45%);
+		}
+
+		footer {
+			margin-top: 1.2rem;
+			text-align: center;
+			color: var(--muted);
+			font-size: 0.9rem;
+			padding: 1rem;
+		}
+
+		@keyframes rise {
+			from {
+				opacity: 0;
+				transform: translateY(16px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 850px) {
+			header {
+				padding: 1.6rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<p class="kicker">Blog 1</p>
+			<h1>The Art of Slow Living: Why Doing Less Can Make Life Better</h1>
+			<p class="subtitle">
+				A lifestyle reflection on intentional living, mindful routines, and finding balance in a fast-paced world.
+			</p>
+			<div class="meta">
+				<span class="chip">By Divyanka Dubey</span>
+				<span class="chip">Lifestyle</span>
+			</div>
+		</header>
+
+		<main>
+			<section class="article-content">
+				<h2>Introduction</h2>
+				<p>
+					Modern life often feels like an endless race. We wake up to notifications, rush through our daily routines,
+					and spend our evenings thinking about tomorrow's responsibilities. Somewhere between deadlines and expectations,
+					many of us forget to enjoy the present moment. This is where the concept of slow living becomes important.
+				</p>
+				<p>
+					Slow living does not mean becoming unproductive. It means becoming more intentional about how we spend our time,
+					energy, and attention.
+				</p>
+
+				<h3>What Is Slow Living?</h3>
+				<p>
+					Slow living is a lifestyle that encourages people to focus on quality rather than quantity. Instead of constantly
+					chasing more, it encourages us to appreciate what we already have. Simple habits such as eating meals without
+					distractions, taking regular walks, reading books, and spending time with loved ones can significantly improve
+					our quality of life.
+				</p>
+
+				<h3>Why Are People Choosing Slow Living?</h3>
+				<ul>
+					<li>Digital overload</li>
+					<li>Work-related stress</li>
+					<li>Burnout</li>
+					<li>Mental fatigue</li>
+					<li>Social pressure</li>
+				</ul>
+				<p>
+					People are beginning to realize that being busy does not always mean being productive.
+				</p>
+
+				<h3>How to Practice Slow Living</h3>
+				<ul>
+					<li>Reduce unnecessary screen time.</li>
+					<li>Create a daily routine.</li>
+					<li>Prioritize meaningful activities.</li>
+					<li>Spend time in nature.</li>
+					<li>Practice mindfulness.</li>
+				</ul>
+
+				<h3>Conclusion</h3>
+				<p>
+					Life is not a competition. Sometimes, the best thing we can do is slow down, take a deep breath,
+					and appreciate the moments we often overlook.
+				</p>
+
+				<a class="back-link" href="index.html">Back to Home</a>
+			</section>
+		</main>
+
+		<footer>
+			<p>Copyright 2026 Divyanka Dubey. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>

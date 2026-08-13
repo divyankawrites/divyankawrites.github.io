@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog 2 | Divyanka Dubey</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg: #f7f2ea;
+			--paper: #fffaf3;
+			--ink: #1d2a38;
+			--muted: #4f5e6d;
+			--accent: #ce5d2a;
+			--accent-soft: #f5d8c8;
+			--line: #e4d8ca;
+			--card: #fffefa;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "DM Sans", sans-serif;
+			color: var(--ink);
+			background:
+				radial-gradient(circle at 12% 10%, #ffe6d5 0%, transparent 34%),
+				radial-gradient(circle at 82% 0%, #f8efe3 0%, transparent 28%),
+				linear-gradient(180deg, #fbf7f0 0%, #f6efe6 100%);
+			line-height: 1.6;
+			min-height: 100vh;
+		}
+
+		.wrap {
+			width: min(1050px, 92vw);
+			margin: 0 auto;
+			padding: 2rem 0 3rem;
+		}
+
+		header {
+			background: color-mix(in srgb, var(--paper) 92%, white 8%);
+			border: 1px solid var(--line);
+			border-radius: 24px;
+			padding: 2.2rem;
+			box-shadow: 0 20px 40px rgba(83, 57, 39, 0.08);
+			animation: rise 700ms ease-out;
+		}
+
+		.kicker {
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			color: var(--accent);
+			font-weight: 700;
+			margin-bottom: 0.6rem;
+		}
+
+		h1, h2 {
+			font-family: "Fraunces", serif;
+			line-height: 1.12;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 5vw, 3.2rem);
+			margin-bottom: 0.7rem;
+		}
+
+		.subtitle {
+			font-size: 1.05rem;
+			color: var(--muted);
+			max-width: 65ch;
+		}
+
+		.meta {
+			margin-top: 1.2rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.6rem;
+		}
+
+		.chip {
+			border: 1px solid var(--line);
+			background: var(--card);
+			border-radius: 999px;
+			padding: 0.45rem 0.9rem;
+			font-size: 0.9rem;
+			color: var(--ink);
+			text-decoration: none;
+		}
+
+		main {
+			margin-top: 1.4rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		section {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: 20px;
+			padding: 1.4rem;
+			box-shadow: 0 10px 30px rgba(44, 41, 37, 0.05);
+			animation: rise 700ms ease-out;
+		}
+
+		section h2 {
+			font-size: 1.4rem;
+			margin-bottom: 0.8rem;
+		}
+
+		p + p {
+			margin-top: 0.7rem;
+		}
+
+		.article-content h3 {
+			font-family: "Fraunces", serif;
+			font-size: 1.2rem;
+			margin-top: 1.1rem;
+			margin-bottom: 0.5rem;
+		}
+
+		ul {
+			padding-left: 1.1rem;
+		}
+
+		li + li {
+			margin-top: 0.5rem;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 1rem;
+			text-decoration: none;
+			font-weight: 700;
+			color: #7a371a;
+			border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent 45%);
+		}
+
+		footer {
+			margin-top: 1.2rem;
+			text-align: center;
+			color: var(--muted);
+			font-size: 0.9rem;
+			padding: 1rem;
+		}
+
+		@keyframes rise {
+			from {
+				opacity: 0;
+				transform: translateY(16px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 850px) {
+			header {
+				padding: 1.6rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<p class="kicker">Blog 2</p>
+			<h1>Why Social Connections Matter More Than Ever</h1>
+			<p class="subtitle">
+				A closer look at meaningful human connection in an age of constant digital communication.
+			</p>
+			<div class="meta">
+				<span class="chip">By Divyanka Dubey</span>
+				<span class="chip">Relationships</span>
+			</div>
+		</header>
+
+		<main>
+			<section class="article-content">
+				<h2>Introduction</h2>
+				<p>
+					Humans are naturally social beings. From childhood to old age, our relationships shape our experiences,
+					influence our decisions, and affect our emotional well-being. Yet, despite living in an era of constant
+					digital communication, many people report feeling lonely and disconnected.
+				</p>
+				<p>
+					Socializing is not simply about having conversations. It is about creating meaningful connections.
+				</p>
+
+				<h3>The Benefits of Socializing</h3>
+				<p>
+					Research has consistently shown that healthy social relationships can improve both physical and emotional health.
+					Strong social connections can:
+				</p>
+				<ul>
+					<li>Reduce stress.</li>
+					<li>Improve self-confidence.</li>
+					<li>Increase happiness.</li>
+					<li>Provide emotional support.</li>
+					<li>Encourage personal growth.</li>
+				</ul>
+
+				<h3>The Impact of Technology</h3>
+				<p>
+					Technology has transformed the way we communicate. Social media platforms allow us to stay connected across
+					great distances, but online interactions do not always replace face-to-face relationships.
+				</p>
+				<p>
+					A large number of online followers does not necessarily translate into meaningful friendships.
+				</p>
+
+				<h3>How to Build Better Relationships</h3>
+				<ul>
+					<li>Listen more than you speak.</li>
+					<li>Be genuinely interested in others.</li>
+					<li>Make time for family and friends.</li>
+					<li>Participate in community activities.</li>
+					<li>Develop new hobbies and interests.</li>
+				</ul>
+
+				<h3>Conclusion</h3>
+				<p>
+					Meaningful relationships do not happen by accident. They require time, patience, and effort.
+					Investing in our social connections may be one of the most valuable decisions we make throughout our lives.
+				</p>
+
+				<a class="back-link" href="index.html">Back to Home</a>
+			</section>
+		</main>
+
+		<footer>
+			<p>Copyright 2026 Divyanka Dubey. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>

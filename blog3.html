@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog 3 | Divyanka Dubey</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg: #f7f2ea;
+			--paper: #fffaf3;
+			--ink: #1d2a38;
+			--muted: #4f5e6d;
+			--accent: #ce5d2a;
+			--accent-soft: #f5d8c8;
+			--line: #e4d8ca;
+			--card: #fffefa;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "DM Sans", sans-serif;
+			color: var(--ink);
+			background:
+				radial-gradient(circle at 12% 10%, #ffe6d5 0%, transparent 34%),
+				radial-gradient(circle at 82% 0%, #f8efe3 0%, transparent 28%),
+				linear-gradient(180deg, #fbf7f0 0%, #f6efe6 100%);
+			line-height: 1.6;
+			min-height: 100vh;
+		}
+
+		.wrap {
+			width: min(1050px, 92vw);
+			margin: 0 auto;
+			padding: 2rem 0 3rem;
+		}
+
+		header {
+			background: color-mix(in srgb, var(--paper) 92%, white 8%);
+			border: 1px solid var(--line);
+			border-radius: 24px;
+			padding: 2.2rem;
+			box-shadow: 0 20px 40px rgba(83, 57, 39, 0.08);
+			animation: rise 700ms ease-out;
+		}
+
+		.kicker {
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			color: var(--accent);
+			font-weight: 700;
+			margin-bottom: 0.6rem;
+		}
+
+		h1, h2 {
+			font-family: "Fraunces", serif;
+			line-height: 1.12;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 5vw, 3.2rem);
+			margin-bottom: 0.7rem;
+		}
+
+		.subtitle {
+			font-size: 1.05rem;
+			color: var(--muted);
+			max-width: 65ch;
+		}
+
+		.meta {
+			margin-top: 1.2rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.6rem;
+		}
+
+		.chip {
+			border: 1px solid var(--line);
+			background: var(--card);
+			border-radius: 999px;
+			padding: 0.45rem 0.9rem;
+			font-size: 0.9rem;
+			color: var(--ink);
+			text-decoration: none;
+		}
+
+		main {
+			margin-top: 1.4rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		section {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: 20px;
+			padding: 1.4rem;
+			box-shadow: 0 10px 30px rgba(44, 41, 37, 0.05);
+			animation: rise 700ms ease-out;
+		}
+
+		section h2 {
+			font-size: 1.4rem;
+			margin-bottom: 0.8rem;
+		}
+
+		p + p {
+			margin-top: 0.7rem;
+		}
+
+		.article-content h3 {
+			font-family: "Fraunces", serif;
+			font-size: 1.2rem;
+			margin-top: 1.1rem;
+			margin-bottom: 0.5rem;
+		}
+
+		ul {
+			padding-left: 1.1rem;
+		}
+
+		li + li {
+			margin-top: 0.5rem;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 1rem;
+			text-decoration: none;
+			font-weight: 700;
+			color: #7a371a;
+			border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent 45%);
+		}
+
+		footer {
+			margin-top: 1.2rem;
+			text-align: center;
+			color: var(--muted);
+			font-size: 0.9rem;
+			padding: 1rem;
+		}
+
+		@keyframes rise {
+			from {
+				opacity: 0;
+				transform: translateY(16px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 850px) {
+			header {
+				padding: 1.6rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<p class="kicker">Blog 3</p>
+			<h1>Small Daily Habits That Can Transform Your Health</h1>
+			<p class="subtitle">
+				Practical habits around food, movement, sleep, and stress that create long-term wellness.
+			</p>
+			<div class="meta">
+				<span class="chip">By Divyanka Dubey</span>
+				<span class="chip">Health</span>
+			</div>
+		</header>
+
+		<main>
+			<section class="article-content">
+				<h2>Introduction</h2>
+				<p>
+					Many people believe that improving their health requires dramatic lifestyle changes.
+					In reality, small and consistent habits often have a greater long-term impact than temporary solutions.
+					The journey toward better health begins with simple daily choices.
+				</p>
+
+				<h3>Start With Better Nutrition</h3>
+				<p>
+					Healthy eating does not require a complicated diet. Simple changes can make a significant difference:
+				</p>
+				<ul>
+					<li>Eat more fruits and vegetables.</li>
+					<li>Drink enough water.</li>
+					<li>Reduce processed foods.</li>
+					<li>Choose balanced meals.</li>
+				</ul>
+
+				<h3>Move Your Body Every Day</h3>
+				<p>
+					Physical activity is essential for maintaining overall health. Regular exercise can:
+				</p>
+				<ul>
+					<li>Improve heart health.</li>
+					<li>Increase energy levels.</li>
+					<li>Strengthen muscles and bones.</li>
+					<li>Support mental well-being.</li>
+				</ul>
+				<p>
+					Even a 30-minute walk can provide meaningful health benefits.
+				</p>
+
+				<h3>Prioritize Sleep</h3>
+				<p>
+					Sleep is often overlooked. Poor sleep can affect concentration, mood, productivity, and immune function.
+					Adults should aim for seven to nine hours of quality sleep each night.
+				</p>
+
+				<h3>Manage Stress</h3>
+				<p>
+					Chronic stress can negatively affect both physical and mental health.
+					Simple stress-management techniques include:
+				</p>
+				<ul>
+					<li>Meditation</li>
+					<li>Deep breathing</li>
+					<li>Exercise</li>
+					<li>Reading</li>
+					<li>Spending time with loved ones</li>
+				</ul>
+
+				<h3>Conclusion</h3>
+				<p>
+					Good health is not built overnight. Small, sustainable habits practiced consistently can lead to significant
+					improvements over time. The most important step is simply getting started.
+				</p>
+
+				<a class="back-link" href="index.html">Back to Home</a>
+			</section>
+		</main>
+
+		<footer>
+			<p>Copyright 2026 Divyanka Dubey. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>
