@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Divyanka Dubey | Writing Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg: #f7f2ea;
+			--paper: #fffaf3;
+			--ink: #1d2a38;
+			--muted: #4f5e6d;
+			--accent: #ce5d2a;
+			--accent-soft: #f5d8c8;
+			--line: #e4d8ca;
+			--card: #fffefa;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "DM Sans", sans-serif;
+			color: var(--ink);
+			background:
+				radial-gradient(circle at 12% 10%, #ffe6d5 0%, transparent 34%),
+				radial-gradient(circle at 82% 0%, #f8efe3 0%, transparent 28%),
+				linear-gradient(180deg, #fbf7f0 0%, #f6efe6 100%);
+			line-height: 1.6;
+			min-height: 100vh;
+		}
+
+		.wrap {
+			width: min(1050px, 92vw);
+			margin: 0 auto;
+			padding: 2rem 0 3rem;
+		}
+
+		header {
+			background: color-mix(in srgb, var(--paper) 92%, white 8%);
+			border: 1px solid var(--line);
+			border-radius: 24px;
+			padding: 2.2rem;
+			box-shadow: 0 20px 40px rgba(83, 57, 39, 0.08);
+			animation: rise 700ms ease-out;
+		}
+
+		.kicker {
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			color: var(--accent);
+			font-weight: 700;
+			margin-bottom: 0.6rem;
+		}
+
+		h1, h2 {
+			font-family: "Fraunces", serif;
+			line-height: 1.12;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 5vw, 3.2rem);
+			margin-bottom: 0.7rem;
+		}
+
+		.subtitle {
+			font-size: 1.05rem;
+			color: var(--muted);
+			max-width: 65ch;
+		}
+
+		.meta {
+			margin-top: 1.2rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.6rem;
+		}
+
+		.chip {
+			border: 1px solid var(--line);
+			background: var(--card);
+			border-radius: 999px;
+			padding: 0.45rem 0.9rem;
+			font-size: 0.9rem;
+			color: var(--ink);
+			text-decoration: none;
+		}
+
+		main {
+			margin-top: 1.4rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		section {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: 20px;
+			padding: 1.4rem;
+			box-shadow: 0 10px 30px rgba(44, 41, 37, 0.05);
+			animation: rise 700ms ease-out;
+		}
+
+		section h2 {
+			font-size: 1.4rem;
+			margin-bottom: 0.8rem;
+		}
+
+		p + p {
+			margin-top: 0.7rem;
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1rem;
+		}
+
+		ul {
+			padding-left: 1.1rem;
+		}
+
+		li + li {
+			margin-top: 0.5rem;
+		}
+
+		.timeline-item + .timeline-item {
+			margin-top: 1rem;
+			padding-top: 1rem;
+			border-top: 1px dashed var(--line);
+		}
+
+		.role {
+			font-weight: 700;
+			color: var(--ink);
+		}
+
+		.time {
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+
+		.blog-grid {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 0.9rem;
+		}
+
+		.blog-card {
+			background: linear-gradient(160deg, #fffefc 0%, #f8efe3 100%);
+			border: 1px solid var(--line);
+			border-radius: 16px;
+			padding: 1rem;
+		}
+
+		.blog-card h3 {
+			font-size: 1.05rem;
+			margin-bottom: 0.45rem;
+		}
+
+		.soon {
+			display: inline-block;
+			margin-top: 0.6rem;
+			padding: 0.2rem 0.6rem;
+			border-radius: 999px;
+			background: var(--accent-soft);
+			color: #7a371a;
+			font-size: 0.78rem;
+			font-weight: 700;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+		}
+
+		footer {
+			margin-top: 1.2rem;
+			text-align: center;
+			color: var(--muted);
+			font-size: 0.9rem;
+			padding: 1rem;
+		}
+
+		@keyframes rise {
+			from {
+				opacity: 0;
+				transform: translateY(16px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 850px) {
+			.grid {
+				grid-template-columns: 1fr;
+			}
+
+			.blog-grid {
+				grid-template-columns: 1fr;
+			}
+
+			header {
+				padding: 1.6rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<p class="kicker">Portfolio</p>
+			<h1>Divyanka Dubey</h1>
+			<p class="subtitle">
+				Content Writer, Copywriter, and Research Documentation Specialist with a strong scientific background,
+				focused on turning complex information into clear, engaging writing.
+			</p>
+			<div class="meta">
+				<span class="chip">Bangalore, India</span>
+				<a class="chip" href="mailto:divyankadubey1996@gmail.com">divyankadubey1996@gmail.com</a>
+				<a class="chip" href="https://linkedin.com/in/divyanka-dubey-a1a2671a3" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+			</div>
+		</header>
+
+		<main>
+			<section>
+				<h2>Professional Profile</h2>
+				<p>
+					Curious and detail-oriented writer with 4+ years of experience in pharmacovigilance, research,
+					and scientific documentation. I specialize in writing content that balances technical accuracy
+					with readability for diverse audiences.
+				</p>
+			</section>
+
+			<section class="grid">
+				<div>
+					<h2>Writing Competencies</h2>
+					<ul>
+						<li>Blog Writing and Article Writing</li>
+						<li>Creative Writing and Storytelling</li>
+						<li>Research-Based and Technical Writing</li>
+						<li>Editing, Proofreading, and Content Strategy</li>
+						<li>SEO Fundamentals and AI-Assisted Writing</li>
+					</ul>
+				</div>
+				<div>
+					<h2>Domain Strength</h2>
+					<ul>
+						<li>ICSR and SAE safety documentation</li>
+						<li>Global reporting exposure: EMA, USFDA, CDSCO, PMDA</li>
+						<li>MedDRA coding and signal detection workflows</li>
+						<li>Documentation support for major clinical studies</li>
+						<li>Tools: Argus, VigiFlow, Excel, Power BI, SQL, JIRA</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Experience Snapshot</h2>
+				<div class="timeline-item">
+					<p class="role">Assistant Manager, Pharmacovigilance - Meril Life Sciences Pvt. Ltd.</p>
+					<p class="time">2022 to 2026</p>
+					<p>
+						Led safety documentation, case review, and compliance support across clinical and post-marketing
+						programs. Contributed to landmark registry outcomes and cross-functional documentation quality.
+					</p>
+				</div>
+				<div class="timeline-item">
+					<p class="role">Senior Executive / Executive, Pharmacovigilance - Meril Life Sciences Pvt. Ltd.</p>
+					<p>
+						Managed adverse event intake, triage, case processing, quality checks, and safety database workflows.
+					</p>
+				</div>
+				<div class="timeline-item">
+					<p class="role">Drug Safety Associate - IQVIA</p>
+					<p>
+						Processed adverse event cases, supported SAE reconciliation, and helped maintain regulatory readiness.
+					</p>
+				</div>
+			</section>
+
+			<section>
+				<h2>Education</h2>
+				<ul>
+					<li>Advanced Diploma in Pharmacovigilance (2021)</li>
+					<li>M.Sc. Biochemistry (2020)</li>
+					<li>B.Sc. Biotechnology (2018)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Blogs</h2>
+				<p>
+					This section is prepared for publishing blog posts. You can replace these placeholders with your actual blog links and summaries.
+				</p>
+				<div class="blog-grid" style="margin-top: 0.9rem;">
+					<article class="blog-card">
+						<h3>Blog Title 1</h3>
+						<p>Short summary of your post goes here. Add your insights, audience focus, and key takeaway.</p>
+						<span class="soon">Coming Soon</span>
+					</article>
+					<article class="blog-card">
+						<h3>Blog Title 2</h3>
+						<p>Short summary of your post goes here. Add your insights, audience focus, and key takeaway.</p>
+						<span class="soon">Coming Soon</span>
+					</article>
+					<article class="blog-card">
+						<h3>Blog Title 3</h3>
+						<p>Short summary of your post goes here. Add your insights, audience focus, and key takeaway.</p>
+						<span class="soon">Coming Soon</span>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Copyright 2026 Divyanka Dubey. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>
